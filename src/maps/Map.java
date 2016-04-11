@@ -9,4 +9,4 @@ public interface Map
 	void clear();
 	int size();
 	boolean isEmpty();
-	}
+}
