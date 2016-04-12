@@ -1,6 +1,7 @@
 package maps;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Map1 implements Map
@@ -111,6 +112,26 @@ public class Map1 implements Map
 	public boolean isEmpty()
 	{
 		return list.isEmpty();
+	}
+	
+	public Iterator<String> keyIterator()
+	{
+		List<String> k = new ArrayList<String>();
+		for(ListElement l: list)
+		{
+			k.add(l.getKey());
+		}
+		return k.iterator();
+	}
+	
+	public Iterator<Integer> valueIterator()
+	{
+		List<Integer> k = new ArrayList<Integer>();
+		for(ListElement l: list)
+		{
+			k.add(l.getValue());
+		}
+		return k.iterator();
 	}
 	
 	public String toString()
