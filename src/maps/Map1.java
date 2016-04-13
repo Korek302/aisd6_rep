@@ -126,12 +126,12 @@ public class Map1 implements Map
 	
 	public Iterator<Integer> valueIterator()
 	{
-		List<Integer> k = new ArrayList<Integer>();
+		List<Integer> v = new ArrayList<Integer>();
 		for(ListElement l: list)
 		{
-			k.add(l.getValue());
+			v.add(l.getValue());
 		}
-		return k.iterator();
+		return v.iterator();
 	}
 	
 	public String toString()
